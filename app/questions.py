@@ -1,6 +1,7 @@
 QUESTIONS = [
     ("name", "What is your name?"),
     ("phone_number", "What is your phone number?"),
+    ("email", "What is your email address?"),
     ("date", "What date would you like to reserve? (DD/MM/YYYY)"),
     ("time", "What time would you prefer?"),
     ("party_size", "How many guests will be joining?"),

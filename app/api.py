@@ -41,6 +41,7 @@ class ChatRequest(BaseModel):
 class DirectBookingRequest(BaseModel):
     name: str
     phone_number: str
+    email: str
     date: str
     time: str
     party_size: int
@@ -130,6 +131,7 @@ def book(request: DirectBookingRequest):
     booking = BookingDetails(
         name=request.name,
         phone_number=request.phone_number,
+        email=request.email,
         date=request.date,
         time=request.time,
         party_size=request.party_size,

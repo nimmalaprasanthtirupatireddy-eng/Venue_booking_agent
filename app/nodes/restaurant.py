@@ -3,6 +3,7 @@ import random
 
 from langchain_core.messages import AIMessage
 from Venue_booking_agent.app.models import BookingState
+from app.services.email_service import send_email
 
 from Venue_booking_agent.app.config import (
     MAX_RETRIES,
@@ -49,7 +50,16 @@ def send_to_restaurant(state: BookingState):
         response = get_restaurant_response()
 
         if response == "accept":
-            confirmation_message = booking_confirmed_message(booking_id, booking)
+            confirmation_message = booking_confirmed_message(
+                booking_id,
+                booking,
+            )
+
+            send_email(
+                to_email=booking.email,
+                subject=f"Booking Confirmed - {booking_id}",
+                body=confirmation_message,
+            )
 
             save_booking(booking_id, booking, STATUS_CONFIRMED)
             return {

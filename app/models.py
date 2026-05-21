@@ -17,6 +17,7 @@ from Venue_booking_agent.app.utils.validators import (
 class BookingDetails(BaseModel):
     name: Optional[str] = None
     phone_number: Optional[str] = None
+    email: Optional[str] = None
     date: Optional[str] = None
     time: Optional[str] = None
     party_size: Optional[int] = None

@@ -14,6 +14,8 @@ from app.utils.validators import (
     normalize_dietary,
 )
 
+from app.models_recommendation import RestaurantPreference, SelectedRestaurant
+
 class BookingDetails(BaseModel):
     name: Optional[str] = None
     phone_number: Optional[str] = None
@@ -66,8 +68,16 @@ class BookingDetails(BaseModel):
 class BookingState(BaseModel):
     messages: Annotated[list, add_messages] = []
 
+    restaurant_preference: RestaurantPreference = RestaurantPreference()
+    selected_restaurant: SelectedRestaurant = SelectedRestaurant()
+
+    restaurants_recommended: bool = False
+    restaurant_selected: bool = False
+
     booking: BookingDetails = BookingDetails()
+
     booking_id: Optional[str] = None
+
     info_complete: bool = False
     user_consented: bool = False
     booking_status: str = STATUS_PENDING

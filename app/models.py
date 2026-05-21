@@ -4,9 +4,9 @@ from typing import Optional, Annotated
 from pydantic import BaseModel, field_validator
 from langgraph.graph.message import add_messages
 
-from Venue_booking_agent.app.config import STATUS_PENDING
+from app.config import STATUS_PENDING
 
-from Venue_booking_agent.app.utils.validators import (
+from app.utils.validators import (
     clean_phone_number,
     validate_future_date,
     validate_time,

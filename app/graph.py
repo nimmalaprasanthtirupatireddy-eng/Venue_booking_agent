@@ -1,12 +1,12 @@
 from langgraph.graph import StateGraph, START, END
 
-from Venue_booking_agent.app.models import BookingState
-from Venue_booking_agent.app.nodes.gather_info import gather_info
-from Venue_booking_agent.app.nodes.consent import consent_gate, confirm_booking
-from Venue_booking_agent.app.nodes.restaurant import send_to_restaurant
-from Venue_booking_agent.app.nodes.cancel import cancel_booking
+from app.models import BookingState
+from app.nodes.gather_info import gather_info
+from app.nodes.consent import consent_gate, confirm_booking
+from app.nodes.restaurant import send_to_restaurant
+from app.nodes.cancel import cancel_booking
 
-from Venue_booking_agent.app.config import (
+from app.config import (
     STATUS_CONTACTING_RESTAURANT,
     STATUS_CANCELLED_BY_USER,
 )

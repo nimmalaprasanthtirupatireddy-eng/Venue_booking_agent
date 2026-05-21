@@ -3,15 +3,15 @@ from pydantic import BaseModel
 
 from langchain_core.messages import HumanMessage
 
-from Venue_booking_agent.app.graph import build_graph
-from Venue_booking_agent.app.models import BookingState, BookingDetails
-from Venue_booking_agent.app.services.storage_service import init_db, get_all_bookings, save_booking
-from Venue_booking_agent.app.services.notification_service import (
+from app.graph import build_graph
+from app.models import BookingState, BookingDetails
+from app.services.storage_service import init_db, get_all_bookings, save_booking
+from app.services.notification_service import (
     booking_confirmed_message,
     booking_rejected_message,
     booking_failed_message,
 )
-from Venue_booking_agent.app.config import (
+from app.config import (
     MAX_RETRIES,
     STATUS_CONTACTING_RESTAURANT,
     STATUS_CONFIRMED,

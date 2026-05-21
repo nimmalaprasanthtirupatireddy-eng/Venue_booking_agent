@@ -1,8 +1,8 @@
 from langchain_core.messages import HumanMessage, AIMessage
 
-from Venue_booking_agent.app.models import BookingDetails, BookingState
-from Venue_booking_agent.app.questions import get_missing_field, parse_input
-from Venue_booking_agent.app.config import STATUS_AWAITING_CONFIRMATION
+from app.models import BookingDetails, BookingState
+from app.questions import get_missing_field, parse_input
+from app.config import STATUS_AWAITING_CONFIRMATION
 
 def gather_info(state: BookingState):
     last_user_message = None

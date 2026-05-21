@@ -1,7 +1,7 @@
 from langchain_core.messages import HumanMessage
 
-from Venue_booking_agent.app.models import BookingState
-from Venue_booking_agent.app.graph import build_graph
+from app.models import BookingState
+from app.graph import build_graph
 
 
 def run_agent():

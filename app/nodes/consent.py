@@ -1,7 +1,7 @@
 from langchain_core.messages import HumanMessage, AIMessage
 
-from Venue_booking_agent.app.models import BookingState
-from Venue_booking_agent.app.config import (
+from app.models import BookingState
+from app.config import (
     STATUS_CONTACTING_RESTAURANT,
     STATUS_CANCELLED_BY_USER,
 )

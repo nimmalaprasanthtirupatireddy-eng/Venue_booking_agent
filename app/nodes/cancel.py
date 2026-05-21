@@ -1,6 +1,6 @@
 from langchain_core.messages import AIMessage
 
-from Venue_booking_agent.app.models import BookingState
+from app.models import BookingState
 
 
 def cancel_booking(state: BookingState):

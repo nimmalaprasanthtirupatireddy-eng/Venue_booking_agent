@@ -2,10 +2,10 @@ import time
 import random
 
 from langchain_core.messages import AIMessage
-from Venue_booking_agent.app.models import BookingState
+from app.models import BookingState
 from app.services.email_service import send_email
 
-from Venue_booking_agent.app.config import (
+from app.config import (
     MAX_RETRIES,
     RETRY_DELAY_SECONDS,
     STATUS_CONFIRMED,
@@ -13,17 +13,17 @@ from Venue_booking_agent.app.config import (
     STATUS_FAILED_NO_RESPONSE,
 )
 
-from Venue_booking_agent.app.services.notification_service import (
+from app.services.notification_service import (
     booking_confirmed_message,
     booking_rejected_message,
     booking_failed_message,
 )
 
-from Venue_booking_agent.app.services.restaurant_service import get_restaurant_response
+from app.services.restaurant_service import get_restaurant_response
 
-from Venue_booking_agent.app.logger import logger
+from app.logger import logger
 
-from Venue_booking_agent.app.services.storage_service import save_booking
+from app.services.storage_service import save_booking
 
 
 def send_to_restaurant(state: BookingState):

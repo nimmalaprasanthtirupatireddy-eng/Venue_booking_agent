@@ -1,4 +1,4 @@
-from Venue_booking_agent.app.config import VALID_RESTAURANT_RESPONSES
+from app.config import VALID_RESTAURANT_RESPONSES
 
 
 def get_restaurant_response():

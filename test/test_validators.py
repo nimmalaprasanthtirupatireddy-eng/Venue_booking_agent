@@ -1,6 +1,6 @@
 import pytest
 
-from Venue_booking_agent.app.utils.validators import (
+from app.utils.validators import (
     clean_phone_number,
     validate_future_date,
     validate_time,

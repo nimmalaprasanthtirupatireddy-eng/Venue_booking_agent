@@ -1,5 +1,5 @@
-from Venue_booking_agent.app.models import BookingDetails
-from Venue_booking_agent.app.questions import get_missing_field, parse_input
+from app.models import BookingDetails
+from app.questions import get_missing_field, parse_input
 
 
 def test_first_missing_field_is_name():

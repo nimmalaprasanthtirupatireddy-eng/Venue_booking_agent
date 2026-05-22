@@ -1,498 +1,859 @@
-
 [
   {
     "id": "R001",
     "name": "Spice Garden",
     "location": "Doha",
-    "cuisine": ["indian", "north indian"],
+    "cuisine": [
+      "indian",
+      "north indian"
+    ],
     "budget": "$$",
     "rating": 4.7,
-    "dietary": ["veg", "halal"],
-    "ambience": ["family", "casual"],
-    "phone": "+97411111111"
+    "dietary": [
+      "veg",
+      "halal"
+    ],
+    "ambience": [
+      "family",
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R002",
     "name": "Sea Pearl",
     "location": "Doha",
-    "cuisine": ["seafood", "arabic"],
+    "cuisine": [
+      "seafood",
+      "arabic"
+    ],
     "budget": "$$$",
     "rating": 4.8,
-    "dietary": ["halal"],
-    "ambience": ["fine dining", "romantic"],
-    "phone": "+97422222222"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "fine dining",
+      "romantic"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R003",
     "name": "Royal Curry",
     "location": "Doha",
-    "cuisine": ["indian", "south indian"],
+    "cuisine": [
+      "indian",
+      "south indian"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["veg", "halal"],
-    "ambience": ["family"],
-    "phone": "+97433333333"
+    "dietary": [
+      "veg",
+      "halal"
+    ],
+    "ambience": [
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R004",
     "name": "Green Bowl",
     "location": "Doha",
-    "cuisine": ["healthy", "vegan", "vegetarian"],
+    "cuisine": [
+      "healthy",
+      "vegan",
+      "vegetarian"
+    ],
     "budget": "$$",
     "rating": 4.6,
-    "dietary": ["veg", "vegan", "gluten free"],
-    "ambience": ["casual"],
-    "phone": "+97444444444"
+    "dietary": [
+      "veg",
+      "vegan",
+      "gluten free"
+    ],
+    "ambience": [
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R005",
     "name": "Arabian Nights",
     "location": "Doha",
-    "cuisine": ["arabic", "middle eastern"],
+    "cuisine": [
+      "arabic",
+      "middle eastern"
+    ],
     "budget": "$$$",
     "rating": 4.9,
-    "dietary": ["halal"],
-    "ambience": ["fine dining", "family"],
-    "phone": "+97455555555"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "fine dining",
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R006",
     "name": "Desert Flame",
     "location": "Doha",
-    "cuisine": ["bbq", "arabic"],
+    "cuisine": [
+      "bbq",
+      "arabic"
+    ],
     "budget": "$$",
     "rating": 4.4,
-    "dietary": ["halal"],
-    "ambience": ["casual", "family"],
-    "phone": "+97466666661"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "casual",
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R007",
     "name": "Ocean Delight",
     "location": "Doha",
-    "cuisine": ["seafood", "continental"],
+    "cuisine": [
+      "seafood",
+      "continental"
+    ],
     "budget": "$$$",
     "rating": 4.7,
-    "dietary": ["halal"],
-    "ambience": ["romantic", "fine dining"],
-    "phone": "+97466666662"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "romantic",
+      "fine dining"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R008",
     "name": "Tandoor Palace",
     "location": "Doha",
-    "cuisine": ["indian", "mughlai"],
+    "cuisine": [
+      "indian",
+      "mughlai"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["halal", "veg"],
-    "ambience": ["family"],
-    "phone": "+97466666663"
+    "dietary": [
+      "halal",
+      "veg"
+    ],
+    "ambience": [
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R009",
     "name": "The Olive Table",
     "location": "Doha",
-    "cuisine": ["mediterranean", "healthy"],
+    "cuisine": [
+      "mediterranean",
+      "healthy"
+    ],
     "budget": "$$$",
     "rating": 4.8,
-    "dietary": ["vegan", "gluten free"],
-    "ambience": ["fine dining"],
-    "phone": "+97466666664"
+    "dietary": [
+      "vegan",
+      "gluten free"
+    ],
+    "ambience": [
+      "fine dining"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R010",
     "name": "Burger Harbor",
     "location": "Doha",
-    "cuisine": ["american", "fast food"],
+    "cuisine": [
+      "american",
+      "fast food"
+    ],
     "budget": "$",
     "rating": 4.3,
-    "dietary": ["halal"],
-    "ambience": ["casual", "friends"],
-    "phone": "+97466666665"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "casual",
+      "friends"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R011",
     "name": "Golden Wok",
     "location": "Doha",
-    "cuisine": ["chinese", "asian"],
+    "cuisine": [
+      "chinese",
+      "asian"
+    ],
     "budget": "$$",
     "rating": 4.4,
-    "dietary": ["halal"],
-    "ambience": ["family", "casual"],
-    "phone": "+97466666666"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "family",
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R012",
     "name": "Pizza Arena",
     "location": "Doha",
-    "cuisine": ["italian", "pizza"],
+    "cuisine": [
+      "italian",
+      "pizza"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["veg"],
-    "ambience": ["friends", "casual"],
-    "phone": "+97466666667"
+    "dietary": [
+      "veg"
+    ],
+    "ambience": [
+      "friends",
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R013",
     "name": "Cedar House",
     "location": "Doha",
-    "cuisine": ["lebanese", "middle eastern"],
+    "cuisine": [
+      "lebanese",
+      "middle eastern"
+    ],
     "budget": "$$$",
     "rating": 4.8,
-    "dietary": ["halal"],
-    "ambience": ["family", "fine dining"],
-    "phone": "+97466666668"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "family",
+      "fine dining"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R014",
     "name": "Sushi Wave",
     "location": "Doha",
-    "cuisine": ["japanese", "sushi"],
+    "cuisine": [
+      "japanese",
+      "sushi"
+    ],
     "budget": "$$$",
     "rating": 4.6,
-    "dietary": ["halal"],
-    "ambience": ["romantic"],
-    "phone": "+97466666669"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "romantic"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R015",
     "name": "Falafel Corner",
     "location": "Doha",
-    "cuisine": ["arabic", "street food"],
+    "cuisine": [
+      "arabic",
+      "street food"
+    ],
     "budget": "$",
     "rating": 4.2,
-    "dietary": ["veg", "halal"],
-    "ambience": ["casual"],
-    "phone": "+97466666670"
+    "dietary": [
+      "veg",
+      "halal"
+    ],
+    "ambience": [
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R016",
     "name": "Pasta Villa",
     "location": "Doha",
-    "cuisine": ["italian", "continental"],
+    "cuisine": [
+      "italian",
+      "continental"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["veg"],
-    "ambience": ["family", "romantic"],
-    "phone": "+97466666671"
+    "dietary": [
+      "veg"
+    ],
+    "ambience": [
+      "family",
+      "romantic"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R017",
     "name": "Doha Diner",
     "location": "Doha",
-    "cuisine": ["american", "breakfast"],
+    "cuisine": [
+      "american",
+      "breakfast"
+    ],
     "budget": "$",
     "rating": 4.1,
-    "dietary": ["halal"],
-    "ambience": ["casual", "family"],
-    "phone": "+97466666672"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "casual",
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R018",
     "name": "Biryani Hub",
     "location": "Doha",
-    "cuisine": ["indian", "hyderabadi"],
+    "cuisine": [
+      "indian",
+      "hyderabadi"
+    ],
     "budget": "$$",
     "rating": 4.7,
-    "dietary": ["halal"],
-    "ambience": ["family"],
-    "phone": "+97466666673"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R019",
     "name": "The Vegan Spoon",
     "location": "Doha",
-    "cuisine": ["vegan", "healthy"],
+    "cuisine": [
+      "vegan",
+      "healthy"
+    ],
     "budget": "$$",
     "rating": 4.6,
-    "dietary": ["vegan", "gluten free"],
-    "ambience": ["casual", "quiet"],
-    "phone": "+97466666674"
+    "dietary": [
+      "vegan",
+      "gluten free"
+    ],
+    "ambience": [
+      "casual",
+      "quiet"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R020",
     "name": "Shawarma Station",
     "location": "Doha",
-    "cuisine": ["arabic", "fast food"],
+    "cuisine": [
+      "arabic",
+      "fast food"
+    ],
     "budget": "$",
     "rating": 4.3,
-    "dietary": ["halal"],
-    "ambience": ["casual", "friends"],
-    "phone": "+97466666675"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "casual",
+      "friends"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R021",
     "name": "Thai Orchid",
     "location": "Doha",
-    "cuisine": ["thai", "asian"],
+    "cuisine": [
+      "thai",
+      "asian"
+    ],
     "budget": "$$$",
     "rating": 4.7,
-    "dietary": ["halal"],
-    "ambience": ["romantic", "fine dining"],
-    "phone": "+97466666676"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "romantic",
+      "fine dining"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R022",
     "name": "Cafe Mosaic",
     "location": "Doha",
-    "cuisine": ["cafe", "desserts"],
+    "cuisine": [
+      "cafe",
+      "desserts"
+    ],
     "budget": "$",
     "rating": 4.4,
-    "dietary": ["veg"],
-    "ambience": ["casual", "friends"],
-    "phone": "+97466666677"
+    "dietary": [
+      "veg"
+    ],
+    "ambience": [
+      "casual",
+      "friends"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R023",
     "name": "Kebab Kingdom",
     "location": "Doha",
-    "cuisine": ["turkish", "bbq"],
+    "cuisine": [
+      "turkish",
+      "bbq"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["halal"],
-    "ambience": ["family"],
-    "phone": "+97466666678"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R024",
     "name": "Dragon Bowl",
     "location": "Doha",
-    "cuisine": ["chinese", "noodles"],
+    "cuisine": [
+      "chinese",
+      "noodles"
+    ],
     "budget": "$",
     "rating": 4.2,
-    "dietary": ["halal"],
-    "ambience": ["casual"],
-    "phone": "+97466666679"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R025",
     "name": "Saffron Lounge",
     "location": "Doha",
-    "cuisine": ["persian", "middle eastern"],
+    "cuisine": [
+      "persian",
+      "middle eastern"
+    ],
     "budget": "$$$",
     "rating": 4.8,
-    "dietary": ["halal"],
-    "ambience": ["fine dining", "luxury"],
-    "phone": "+97466666680"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "fine dining",
+      "luxury"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R026",
     "name": "Mexi Fiesta",
     "location": "Doha",
-    "cuisine": ["mexican", "tex mex"],
+    "cuisine": [
+      "mexican",
+      "tex mex"
+    ],
     "budget": "$$",
     "rating": 4.3,
-    "dietary": ["veg"],
-    "ambience": ["friends", "casual"],
-    "phone": "+97466666681"
+    "dietary": [
+      "veg"
+    ],
+    "ambience": [
+      "friends",
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R027",
     "name": "BBQ Nation Doha",
     "location": "Doha",
-    "cuisine": ["bbq", "grill"],
+    "cuisine": [
+      "bbq",
+      "grill"
+    ],
     "budget": "$$$",
     "rating": 4.6,
-    "dietary": ["halal"],
-    "ambience": ["family", "group dining"],
-    "phone": "+97466666682"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "family",
+      "group dining"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R028",
     "name": "Morning Brew",
     "location": "Doha",
-    "cuisine": ["cafe", "bakery"],
+    "cuisine": [
+      "cafe",
+      "bakery"
+    ],
     "budget": "$",
     "rating": 4.1,
-    "dietary": ["veg"],
-    "ambience": ["quiet", "casual"],
-    "phone": "+97466666683"
+    "dietary": [
+      "veg"
+    ],
+    "ambience": [
+      "quiet",
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R029",
     "name": "Mandi Express",
     "location": "Doha",
-    "cuisine": ["yemeni", "arabic"],
+    "cuisine": [
+      "yemeni",
+      "arabic"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["halal"],
-    "ambience": ["family"],
-    "phone": "+97466666684"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R030",
     "name": "Fusion Bistro",
     "location": "Doha",
-    "cuisine": ["fusion", "international"],
+    "cuisine": [
+      "fusion",
+      "international"
+    ],
     "budget": "$$$",
     "rating": 4.7,
-    "dietary": ["halal", "veg"],
-    "ambience": ["fine dining", "modern"],
-    "phone": "+97466666685"
+    "dietary": [
+      "halal",
+      "veg"
+    ],
+    "ambience": [
+      "fine dining",
+      "modern"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R031",
     "name": "Crispy Crust",
     "location": "Doha",
-    "cuisine": ["pizza", "fast food"],
+    "cuisine": [
+      "pizza",
+      "fast food"
+    ],
     "budget": "$",
     "rating": 4.0,
-    "dietary": ["veg"],
-    "ambience": ["friends"],
-    "phone": "+97466666686"
+    "dietary": [
+      "veg"
+    ],
+    "ambience": [
+      "friends"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R032",
     "name": "Noodle Street",
     "location": "Doha",
-    "cuisine": ["asian", "thai"],
+    "cuisine": [
+      "asian",
+      "thai"
+    ],
     "budget": "$$",
     "rating": 4.4,
-    "dietary": ["halal"],
-    "ambience": ["casual"],
-    "phone": "+97466666687"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R033",
     "name": "The Royal Feast",
     "location": "Doha",
-    "cuisine": ["continental", "steakhouse"],
+    "cuisine": [
+      "continental",
+      "steakhouse"
+    ],
     "budget": "$$$$",
     "rating": 4.9,
-    "dietary": ["halal"],
-    "ambience": ["luxury", "romantic"],
-    "phone": "+97466666688"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "luxury",
+      "romantic"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R034",
     "name": "Veggie Delight",
     "location": "Doha",
-    "cuisine": ["vegetarian", "healthy"],
+    "cuisine": [
+      "vegetarian",
+      "healthy"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["veg", "vegan"],
-    "ambience": ["casual", "family"],
-    "phone": "+97466666689"
+    "dietary": [
+      "veg",
+      "vegan"
+    ],
+    "ambience": [
+      "casual",
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R035",
     "name": "Turkish Flame",
     "location": "Doha",
-    "cuisine": ["turkish", "middle eastern"],
+    "cuisine": [
+      "turkish",
+      "middle eastern"
+    ],
     "budget": "$$$",
     "rating": 4.8,
-    "dietary": ["halal"],
-    "ambience": ["family", "fine dining"],
-    "phone": "+97466666690"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "family",
+      "fine dining"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R036",
     "name": "Coffee Cove",
     "location": "Doha",
-    "cuisine": ["cafe", "snacks"],
+    "cuisine": [
+      "cafe",
+      "snacks"
+    ],
     "budget": "$",
     "rating": 4.2,
-    "dietary": ["veg"],
-    "ambience": ["quiet", "study friendly"],
-    "phone": "+97466666691"
+    "dietary": [
+      "veg"
+    ],
+    "ambience": [
+      "quiet",
+      "study friendly"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R037",
     "name": "Korean Grill House",
     "location": "Doha",
-    "cuisine": ["korean", "bbq"],
+    "cuisine": [
+      "korean",
+      "bbq"
+    ],
     "budget": "$$$",
     "rating": 4.6,
-    "dietary": ["halal"],
-    "ambience": ["friends", "modern"],
-    "phone": "+97466666692"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "friends",
+      "modern"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R038",
     "name": "Taste of Italy",
     "location": "Doha",
-    "cuisine": ["italian", "pasta"],
+    "cuisine": [
+      "italian",
+      "pasta"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["veg"],
-    "ambience": ["romantic", "family"],
-    "phone": "+97466666693"
+    "dietary": [
+      "veg"
+    ],
+    "ambience": [
+      "romantic",
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R039",
     "name": "Desi Tadka",
     "location": "Doha",
-    "cuisine": ["indian", "street food"],
+    "cuisine": [
+      "indian",
+      "street food"
+    ],
     "budget": "$",
     "rating": 4.4,
-    "dietary": ["veg", "halal"],
-    "ambience": ["casual"],
-    "phone": "+97466666694"
+    "dietary": [
+      "veg",
+      "halal"
+    ],
+    "ambience": [
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R040",
     "name": "Mediterraneo",
     "location": "Doha",
-    "cuisine": ["mediterranean", "seafood"],
+    "cuisine": [
+      "mediterranean",
+      "seafood"
+    ],
     "budget": "$$$",
     "rating": 4.7,
-    "dietary": ["halal"],
-    "ambience": ["luxury", "romantic"],
-    "phone": "+97466666695"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "luxury",
+      "romantic"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R041",
     "name": "Grill Factory",
     "location": "Doha",
-    "cuisine": ["bbq", "american"],
+    "cuisine": [
+      "bbq",
+      "american"
+    ],
     "budget": "$$",
     "rating": 4.3,
-    "dietary": ["halal"],
-    "ambience": ["friends", "family"],
-    "phone": "+97466666696"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "friends",
+      "family"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R042",
     "name": "Asian Fusion Hub",
     "location": "Doha",
-    "cuisine": ["asian", "fusion"],
+    "cuisine": [
+      "asian",
+      "fusion"
+    ],
     "budget": "$$$",
     "rating": 4.8,
-    "dietary": ["halal", "veg"],
-    "ambience": ["modern", "fine dining"],
-    "phone": "+97466666697"
+    "dietary": [
+      "halal",
+      "veg"
+    ],
+    "ambience": [
+      "modern",
+      "fine dining"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R043",
     "name": "Healthy Harvest",
     "location": "Doha",
-    "cuisine": ["healthy", "salads"],
+    "cuisine": [
+      "healthy",
+      "salads"
+    ],
     "budget": "$$",
     "rating": 4.5,
-    "dietary": ["vegan", "gluten free"],
-    "ambience": ["quiet", "casual"],
-    "phone": "+97466666698"
+    "dietary": [
+      "vegan",
+      "gluten free"
+    ],
+    "ambience": [
+      "quiet",
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R044",
     "name": "Bistro Royale",
     "location": "Doha",
-    "cuisine": ["french", "continental"],
+    "cuisine": [
+      "french",
+      "continental"
+    ],
     "budget": "$$$$",
     "rating": 4.9,
-    "dietary": ["halal"],
-    "ambience": ["luxury", "romantic"],
-    "phone": "+97466666699"
+    "dietary": [
+      "halal"
+    ],
+    "ambience": [
+      "luxury",
+      "romantic"
+    ],
+    "phone": "+91 9347860966"
   },
   {
     "id": "R045",
     "name": "Street Eats Doha",
     "location": "Doha",
-    "cuisine": ["street food", "fusion"],
+    "cuisine": [
+      "street food",
+      "fusion"
+    ],
     "budget": "$",
     "rating": 4.2,
-    "dietary": ["halal", "veg"],
-    "ambience": ["friends", "casual"],
-    "phone": "+97477777777"
+    "dietary": [
+      "halal",
+      "veg"
+    ],
+    "ambience": [
+      "friends",
+      "casual"
+    ],
+    "phone": "+91 9347860966"
   }
 ]

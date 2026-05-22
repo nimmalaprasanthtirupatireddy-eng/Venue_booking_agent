@@ -178,6 +178,7 @@ def send_to_restaurant(state: BookingState):
             save_booking(
                 booking_id,
                 booking,
+                restaurant,
                 STATUS_CONFIRMED,
             )
 
@@ -199,6 +200,7 @@ def send_to_restaurant(state: BookingState):
             save_booking(
                 booking_id,
                 booking,
+                restaurant,
                 STATUS_REJECTED,
             )
 
@@ -239,6 +241,7 @@ def send_to_restaurant(state: BookingState):
     save_booking(
         booking_id,
         booking,
+        restaurant,
         STATUS_FAILED_NO_RESPONSE,
     )
 

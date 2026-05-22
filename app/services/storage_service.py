@@ -11,14 +11,24 @@ def init_db():
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS bookings (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        booking_id TEXT,
-        name TEXT,
-        phone_number TEXT,
-        date TEXT,
-        time TEXT,
+
+        booking_id TEXT UNIQUE,
+
+        customer_name TEXT,
+        customer_phone TEXT,
+        customer_email TEXT,
+
+        restaurant_id TEXT,
+        restaurant_name TEXT,
+        restaurant_phone TEXT,
+
+        booking_date TEXT,
+        booking_time TEXT,
         party_size INTEGER,
         dietary TEXT,
+
         status TEXT,
+
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
     """)
@@ -27,49 +37,79 @@ def init_db():
     conn.close()
 
 
-def save_booking(booking_id, booking, status):
+def save_booking(
+    booking_id,
+    booking,
+    restaurant,
+    status,
+):
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     cursor.execute("""
     INSERT INTO bookings (
         booking_id,
-        name,
-        phone_number,
-        date,
-        time,
+
+        customer_name,
+        customer_phone,
+        customer_email,
+
+        restaurant_id,
+        restaurant_name,
+        restaurant_phone,
+
+        booking_date,
+        booking_time,
         party_size,
         dietary,
+
         status
     )
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         booking_id,
+
         booking.name,
         booking.phone_number,
+        booking.email,
+
+        restaurant.id,
+        restaurant.name,
+        restaurant.phone,
+
         booking.date,
         booking.time,
         booking.party_size,
         booking.dietary,
+
         status,
     ))
 
     conn.commit()
     conn.close()
 
+
 def get_all_bookings():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     cursor.execute("""
-    SELECT 
+    SELECT
         booking_id,
-        name,
-        phone_number,
-        date,
-        time,
+
+        customer_name,
+        customer_phone,
+        customer_email,
+
+        restaurant_id,
+        restaurant_name,
+        restaurant_phone,
+
+        booking_date,
+        booking_time,
         party_size,
         dietary,
+
         status,
         created_at
     FROM bookings
@@ -82,14 +122,76 @@ def get_all_bookings():
     return [
         {
             "booking_id": row[0],
-            "name": row[1],
-            "phone_number": row[2],
-            "date": row[3],
-            "time": row[4],
-            "party_size": row[5],
-            "dietary": row[6],
-            "status": row[7],
-            "created_at": row[8],
+
+            "customer_name": row[1],
+            "customer_phone": row[2],
+            "customer_email": row[3],
+
+            "restaurant_id": row[4],
+            "restaurant_name": row[5],
+            "restaurant_phone": row[6],
+
+            "date": row[7],
+            "time": row[8],
+            "party_size": row[9],
+            "dietary": row[10],
+
+            "status": row[11],
+            "created_at": row[12],
         }
         for row in rows
     ]
+
+
+def get_booking_by_id(booking_id):
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    SELECT
+        booking_id,
+
+        customer_name,
+        customer_phone,
+        customer_email,
+
+        restaurant_id,
+        restaurant_name,
+        restaurant_phone,
+
+        booking_date,
+        booking_time,
+        party_size,
+        dietary,
+
+        status,
+        created_at
+    FROM bookings
+    WHERE booking_id = ?
+    """, (booking_id,))
+
+    row = cursor.fetchone()
+    conn.close()
+
+    if not row:
+        return None
+
+    return {
+        "booking_id": row[0],
+
+        "customer_name": row[1],
+        "customer_phone": row[2],
+        "customer_email": row[3],
+
+        "restaurant_id": row[4],
+        "restaurant_name": row[5],
+        "restaurant_phone": row[6],
+
+        "date": row[7],
+        "time": row[8],
+        "party_size": row[9],
+        "dietary": row[10],
+
+        "status": row[11],
+        "created_at": row[12],
+    }

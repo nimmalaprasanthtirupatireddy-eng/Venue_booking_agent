@@ -18,3 +18,4 @@ requests==2.34.2
 pytest
 fastapi
 uvicorn
+python-telegram-bot

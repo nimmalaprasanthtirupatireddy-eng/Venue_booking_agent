@@ -1,15 +1,18 @@
 import sqlite3
 from pathlib import Path
 
+
 DB_PATH = Path("bookings.db")
 
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
+
     cursor = conn.cursor()
 
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS bookings (
+
         id INTEGER PRIMARY KEY AUTOINCREMENT,
 
         booking_id TEXT UNIQUE,
@@ -24,12 +27,18 @@ def init_db():
 
         booking_date TEXT,
         booking_time TEXT,
+
         party_size INTEGER,
+
         dietary TEXT,
 
         status TEXT,
 
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        created_at TIMESTAMP
+            DEFAULT CURRENT_TIMESTAMP,
+
+        updated_at TIMESTAMP
+            DEFAULT CURRENT_TIMESTAMP
     )
     """)
 
@@ -44,10 +53,12 @@ def save_booking(
     status,
 ):
     conn = sqlite3.connect(DB_PATH)
+
     cursor = conn.cursor()
 
     cursor.execute("""
-    INSERT INTO bookings (
+    INSERT OR REPLACE INTO bookings (
+
         booking_id,
 
         customer_name,
@@ -60,13 +71,38 @@ def save_booking(
 
         booking_date,
         booking_time,
+
         party_size,
+
         dietary,
 
-        status
+        status,
+
+        updated_at
+
     )
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    """, (
+
+    VALUES (
+
+        ?, ?, ?, ?,
+
+        ?, ?, ?,
+
+        ?, ?,
+
+        ?,
+
+        ?,
+
+        ?,
+
+        CURRENT_TIMESTAMP
+
+    )
+    """,
+
+    (
+
         booking_id,
 
         booking.name,
@@ -79,76 +115,92 @@ def save_booking(
 
         booking.date,
         booking.time,
+
         booking.party_size,
+
         booking.dietary,
 
         status,
+
     ))
 
     conn.commit()
     conn.close()
 
 
-def get_all_bookings():
+def update_booking_status(
+    booking_id,
+    status,
+):
     conn = sqlite3.connect(DB_PATH)
+
     cursor = conn.cursor()
 
     cursor.execute("""
-    SELECT
-        booking_id,
 
-        customer_name,
-        customer_phone,
-        customer_email,
+    UPDATE bookings
 
-        restaurant_id,
-        restaurant_name,
-        restaurant_phone,
+    SET
 
-        booking_date,
-        booking_time,
-        party_size,
-        dietary,
+        status=?,
 
+        updated_at=CURRENT_TIMESTAMP
+
+    WHERE booking_id=?
+
+    """,
+
+    (
         status,
-        created_at
-    FROM bookings
-    ORDER BY id DESC
-    """)
+        booking_id,
+    ))
 
-    rows = cursor.fetchall()
+    conn.commit()
     conn.close()
 
-    return [
-        {
-            "booking_id": row[0],
 
-            "customer_name": row[1],
-            "customer_phone": row[2],
-            "customer_email": row[3],
-
-            "restaurant_id": row[4],
-            "restaurant_name": row[5],
-            "restaurant_phone": row[6],
-
-            "date": row[7],
-            "time": row[8],
-            "party_size": row[9],
-            "dietary": row[10],
-
-            "status": row[11],
-            "created_at": row[12],
-        }
-        for row in rows
-    ]
-
-
-def get_booking_by_id(booking_id):
+def get_booking_status(
+    booking_id,
+):
     conn = sqlite3.connect(DB_PATH)
+
     cursor = conn.cursor()
 
     cursor.execute("""
+
+    SELECT status
+
+    FROM bookings
+
+    WHERE booking_id=?
+
+    """,
+
+    (
+        booking_id,
+    ))
+
+    row = cursor.fetchone()
+
+    conn.close()
+
+    if not row:
+        return None
+
+    return row[0]
+
+
+def get_booking_by_id(
+    booking_id,
+):
+    conn = sqlite3.connect(DB_PATH)
+
+    cursor = conn.cursor()
+
+    cursor.execute("""
+
     SELECT
+
         booking_id,
 
         customer_name,
@@ -161,22 +213,35 @@ def get_booking_by_id(booking_id):
 
         booking_date,
         booking_time,
+
         party_size,
+
         dietary,
 
         status,
-        created_at
+
+        created_at,
+        updated_at
+
     FROM bookings
-    WHERE booking_id = ?
-    """, (booking_id,))
+
+    WHERE booking_id=?
+
+    """,
+
+    (
+        booking_id,
+    ))
 
     row = cursor.fetchone()
+
     conn.close()
 
     if not row:
         return None
 
     return {
+
         "booking_id": row[0],
 
         "customer_name": row[1],
@@ -189,9 +254,85 @@ def get_booking_by_id(booking_id):
 
         "date": row[7],
         "time": row[8],
+
         "party_size": row[9],
+
         "dietary": row[10],
 
         "status": row[11],
+
         "created_at": row[12],
+        "updated_at": row[13],
+
     }
+
+
+def get_all_bookings():
+
+    conn = sqlite3.connect(DB_PATH)
+
+    cursor = conn.cursor()
+
+    cursor.execute("""
+
+    SELECT
+
+        booking_id,
+
+        customer_name,
+        customer_phone,
+        customer_email,
+
+        restaurant_name,
+
+        booking_date,
+        booking_time,
+
+        party_size,
+
+        dietary,
+
+        status,
+
+        created_at,
+        updated_at
+
+    FROM bookings
+
+    ORDER BY id DESC
+
+    """)
+
+    rows = cursor.fetchall()
+
+    conn.close()
+
+    return [
+
+        {
+
+            "booking_id": row[0],
+
+            "customer_name": row[1],
+            "customer_phone": row[2],
+            "customer_email": row[3],
+
+            "restaurant_name": row[4],
+
+            "date": row[5],
+            "time": row[6],
+
+            "party_size": row[7],
+
+            "dietary": row[8],
+
+            "status": row[9],
+
+            "created_at": row[10],
+            "updated_at": row[11],
+
+        }
+
+        for row in rows
+
+    ]

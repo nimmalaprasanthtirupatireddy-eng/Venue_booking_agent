@@ -1,5 +1,13 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_RESTAURANT_CHAT_ID = os.getenv("TELEGRAM_RESTAURANT_CHAT_ID")
+
 MAX_RETRIES = 3
-RETRY_DELAY_SECONDS = 3
+RETRY_DELAY_SECONDS = 10
 
 BOOKING_ID_PREFIX = "BK"
 

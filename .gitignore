@@ -1,2 +1,11 @@
 .env
 /agent_env
+/.pytest_cache
+test_acs_call.py
+test_openai.py
+/__pycache__/
+/app/__pycache__/
+/tests/__pycache__/
+/app/node/__pycache__/
+/app/service/__pycache__/
+/app/utils/__pycache__/
